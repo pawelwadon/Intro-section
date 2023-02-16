@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  padding: 24px;
+}
+
+.nav-logo {
+  left: 0;
+}
+
+.nav-active {
+  display: none;
+}
+
+.nav-hamburger {
+  cursor: pointer;
+}
+
+.cross {
+  float: right;
+}
+
+.nav-menu-features,
+.nav-menu-company {
+  padding: 12px 0;
+}
+.nav-menu-elements-features,
+.nav-menu-elements-company {
+  display: none;
+}
+
+.nav-menu-element {
+  display: flex;
+  gap: 12px;
+  padding: 10px 10px;
+}
+
+.arrow-up-features,
+.arrow-up-company {
+  display: none;
+}
+
+.nav-menu-main {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+}
+
+img {
+  object-fit: contain;
+}
+
+.register {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.register:hover {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  transition: ease-in-out 0.3s;
+}
+
+.login {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+}
+
+.content-elements {
+  padding: 32px 18px;
+}
+
+.img-mobile {
+  width: 100%;
+  object-fit: fill;
+}
+
+.img-desktop {
+  display: none;
+  max-width: 50%;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 18px 0;
+}
+
+.text {
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+}
+
+.learn-btn {
+  margin-top: 36px;
+  padding: 16px 24px;
+  color: white;
+  background-color: hsl(0, 0%, 8%);
+  border: none;
+  border-radius: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.clients {
+  padding: 28px 10px;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 740px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: hsl(0, 0%, 98%);
+    width: 60vw;
+    min-height: 100vh;
+    padding: 20px;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .nav-menu-features {
+    margin-top: 52px;
+  }
+  .sign-in {
+    width: 100%;
+    padding: 16px 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 740px) {
+  .content {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content-elements {
+    width: 50%;
+    height: 100%;
+  }
+  .img-desktop {
+    display: block;
+    width: 55vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  .clients {
+    justify-content: start;
+    padding-top: 78px;
+  }
+
+  .text {
+    padding: 24px 0;
+    padding-right: 64px;
+    font-size: 24px;
+  }
+
+  .learn-btn {
+    margin-top: 72px;
+  }
+
+  .content {
+    padding: 56px 96px;
+  }
+  .header {
+    font-size: 96px;
+    line-height: 90px;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: none;
+  }
+  .cross {
+    display: none;
+  }
+  .nav {
+    padding: 24px;
+    display: inline-flex;
+    color: black;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-menu {
+    display: flex;
+    gap: 32px;
+    cursor: pointer;
+  }
+  .nav-menu-elements-features,
+  .nav-menu-elements-company {
+    position: fixed;
+    background-color: rgb(250, 250, 250, 0.9);
+    border-radius: 10px;
+  }
+  .sign-in {
+    gap: 16px;
+    display: inline-flex;
+  }
+}
